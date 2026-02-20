@@ -1,0 +1,33 @@
+[1.925s] Invoking command in '/root/ros2_ws/src/docking_pkg': PYTHONPATH=/root/ros2_ws/build/docking_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros2_ws/install/docking_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/docking_pkg build --build-base /root/ros2_ws/build/docking_pkg/build install --record /root/ros2_ws/build/docking_pkg/install.log --single-version-externally-managed install_data
+[2.584s] running egg_info
+[2.586s] creating ../../build/docking_pkg/docking_pkg.egg-info
+[2.587s] writing ../../build/docking_pkg/docking_pkg.egg-info/PKG-INFO
+[2.588s] writing dependency_links to ../../build/docking_pkg/docking_pkg.egg-info/dependency_links.txt
+[2.588s] writing entry points to ../../build/docking_pkg/docking_pkg.egg-info/entry_points.txt
+[2.589s] writing requirements to ../../build/docking_pkg/docking_pkg.egg-info/requires.txt
+[2.589s] writing top-level names to ../../build/docking_pkg/docking_pkg.egg-info/top_level.txt
+[2.589s] writing manifest file '../../build/docking_pkg/docking_pkg.egg-info/SOURCES.txt'
+[2.593s] reading manifest file '../../build/docking_pkg/docking_pkg.egg-info/SOURCES.txt'
+[2.595s] writing manifest file '../../build/docking_pkg/docking_pkg.egg-info/SOURCES.txt'
+[2.595s] running build
+[2.595s] running build_py
+[2.596s] creating /root/ros2_ws/build/docking_pkg/build
+[2.596s] creating /root/ros2_ws/build/docking_pkg/build/lib
+[2.596s] creating /root/ros2_ws/build/docking_pkg/build/lib/docking_pkg
+[2.597s] copying docking_pkg/__init__.py -> /root/ros2_ws/build/docking_pkg/build/lib/docking_pkg
+[2.597s] running install
+[2.597s] running install_lib
+[2.598s] creating /root/ros2_ws/install/docking_pkg/lib/python3.10/site-packages/docking_pkg
+[2.598s] copying /root/ros2_ws/build/docking_pkg/build/lib/docking_pkg/__init__.py -> /root/ros2_ws/install/docking_pkg/lib/python3.10/site-packages/docking_pkg
+[2.599s] byte-compiling /root/ros2_ws/install/docking_pkg/lib/python3.10/site-packages/docking_pkg/__init__.py to __init__.cpython-310.pyc
+[2.600s] running install_data
+[2.600s] creating /root/ros2_ws/install/docking_pkg/share/ament_index
+[2.601s] creating /root/ros2_ws/install/docking_pkg/share/ament_index/resource_index
+[2.601s] creating /root/ros2_ws/install/docking_pkg/share/ament_index/resource_index/packages
+[2.601s] copying resource/docking_pkg -> /root/ros2_ws/install/docking_pkg/share/ament_index/resource_index/packages
+[2.601s] copying package.xml -> /root/ros2_ws/install/docking_pkg/share/docking_pkg
+[2.601s] running install_egg_info
+[2.611s] Copying ../../build/docking_pkg/docking_pkg.egg-info to /root/ros2_ws/install/docking_pkg/lib/python3.10/site-packages/docking_pkg-0.0.0-py3.10.egg-info
+[2.611s] running install_scripts
+[2.664s] writing list of installed files to '/root/ros2_ws/build/docking_pkg/install.log'
+[2.731s] Invoked command in '/root/ros2_ws/src/docking_pkg' returned '0': PYTHONPATH=/root/ros2_ws/build/docking_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros2_ws/install/docking_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/docking_pkg build --build-base /root/ros2_ws/build/docking_pkg/build install --record /root/ros2_ws/build/docking_pkg/install.log --single-version-externally-managed install_data
