@@ -1,0 +1,155 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="my_advanced_world">
+
+    <!-- Physics -->
+    <physics type="ode">
+      <gravity>0 0 -9.8</gravity>
+    </physics>
+
+    <!-- Sun -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- Ground -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- ================= OUTER BOUNDARY (16m x 16m) ================= -->
+
+    <!-- North Wall -->
+    <model name="north_wall">
+      <static>true</static>
+      <pose>0 8 1 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>16 0.3 2</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>16 0.3 2</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <!-- South Wall -->
+    <model name="south_wall">
+      <static>true</static>
+      <pose>0 -8 1 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>16 0.3 2</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>16 0.3 2</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <!-- East Wall -->
+    <model name="east_wall">
+      <static>true</static>
+      <pose>8 0 1 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>0.3 16 2</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>0.3 16 2</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <!-- West Wall -->
+    <model name="west_wall">
+      <static>true</static>
+      <pose>-8 0 1 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>0.3 16 2</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>0.3 16 2</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <!-- ================= SHELF ROWS ================= -->
+
+    <!-- Shelf Row 1 -->
+    <model name="shelf_row_1">
+      <static>true</static>
+      <pose>0 4 1 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>12 1 2</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>12 1 2</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Shelf Row 2 -->
+    <model name="shelf_row_2">
+      <static>true</static>
+      <pose>0 -4 1 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>12 1 2</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>12 1 2</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <!-- ================= CROSS DIVIDERS ================= -->
+
+    <model name="divider_left">
+      <static>true</static>
+      <pose>-4 0 1 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>1 8 2</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>1 8 2</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name="divider_right">
+      <static>true</static>
+      <pose>4 0 1 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>1 8 2</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>1 8 2</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <!-- ================= DOCKING STATION ================= -->
+
+    <model name="charging_dock">
+      <static>true</static>
+      <pose>-6 -6 0.1 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>1.2 1.2 0.2</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>1.2 1.2 0.2</size></box></geometry>
+          <material>
+            <ambient>0 1 0 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+  </world>
+</sdf>

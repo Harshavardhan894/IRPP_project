@@ -1,0 +1,5 @@
+[console_scripts]
+battery_node = docking_pkg.battery_node:main
+mission_manager = docking_pkg.mission_manager:main
+waypoint_mission = docking_pkg.waypoint_mission:main
+
